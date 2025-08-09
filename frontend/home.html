@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AshZon Prime - Home</title>
+  <!-- Tailwind CSS CDN for responsive styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+
+  <!-- Header Section -->
+  <header class="bg-gray-800 p-4 shadow-lg flex justify-between items-center fixed top-0 w-full z-10">
+    <div class="flex items-center">
+      <!-- AshZon Prime Logo -->
+      <img src="https://tse2.mm.bing.net/th/id/OIP.Noy9mWD8MaCnfXu_2mOCWgHaHa?pid=Api&P=0&h=180" alt="AshZon Prime Logo" class="h-8 w-8 rounded-full mr-4 object-contain" />
+      <span class="text-xl font-bold">AshZon Prime</span>
+    </div>
+    <!-- Navigation Links and Language Select -->
+    <nav class="flex items-center space-x-6">
+      <ul class="flex space-x-6">
+        <li><a href="#" class="hover:text-blue-400 transition-colors">Home</a></li>
+        <li><a href="#" class="hover:text-blue-400 transition-colors">TV Shows</a></li>
+        <li><a href="#" class="hover:text-blue-400 transition-colors">Movies</a></li>
+        <li><a href="#" class="hover:text-blue-400 transition-colors">My List</a></li>
+      </ul>
+      <!-- Language Selection Dropdown -->
+      <select class="bg-gray-700 text-white rounded-md py-1 px-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <option value="en">English</option>
+        <option value="ta">தமிழ் (Tamil)</option>
+        <option value="hi">हिंदी (Hindi)</option>
+      </select>
+    </nav>
+  </header>
+
+  <!-- Main Content Area - Padding top to avoid header overlap -->
+  <main class="pt-20 pb-8 px-4 md:px-8 lg:px-12">
+    <!-- Hero Section for Featured Content (Now with an image carousel) -->
+    <section class="mb-10 relative">
+      <!-- The 'hero-image' ID is crucial for JavaScript to target this image -->
+      <img id="hero-carousel-image" src="https://i.ytimg.com/vi/qFhvOB0yoGM/maxresdefault.jpg" alt="Featured Movie/Show" class="w-full h-auto rounded-lg shadow-xl" />
+      <div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-gray-900 to-transparent w-full rounded-b-lg">
+        <h2 class="text-3xl md:text-5xl font-bold mb-2">Epic Saga: The Rise of Heroes</h2>
+        <p class="text-gray-300 text-sm md:text-base max-w-lg mb-4">
+          A thrilling journey across galaxies, as a new hero emerges to challenge ancient evils and unite fractured worlds.
+        </p>
+        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors shadow-md">
+          Watch Now
+        </button>
+      </div>
+    </section>
+
+    <!-- Content Rows - Horizontal scrolling sections -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-4">Continue Watching</h2>
+      <div class="flex overflow-x-auto space-x-4 pb-4 scroll-row">
+        <!-- The Boys (Series: Action, Black Comedy, Drama, Satire, Superhero) -->
+        <div class="flex-none w-40 md:w-48 bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-200">
+          <img src="https://oyster.ignimgs.com/wordpress/stg.ign.com/2020/08/Homelander-Clean.jpg" alt="The Boys Poster" class="w-full h-auto object-cover rounded-t-lg" />
+          <div class="p-3">
+            <h3 class="text-sm font-semibold truncate">The Boys (Superhero Satire)</h3>
+            <div class="w-full bg-gray-700 rounded-full h-1 mt-2">
+              <div class="bg-green-500 h-1 rounded-full" style="width: 65%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reacher (Series: Action, Crime, Detective, Thriller, Drama) -->
+        <div class="flex-none w-40 md:w-48 bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-200">
+          <img src="https://resizing.flixster.com/Q4ZEIAczaoZAaxivmrwDE_Inxco=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vMWQ3Zjk0ZDAtZDcyNC00YjI2LThlZTMtYmJkMTFkMzZiNWFkLmpwZw==" alt="Reacher Poster" class="w-full h-auto object-cover rounded-t-lg" />
+          <div class="p-3">
+            <h3 class="text-sm font-semibold truncate">Reacher (Action Thriller)</h3>
+            <div class="w-full bg-gray-700 rounded-full h-1 mt-2">
+              <div class="bg-green-500 h-1 rounded-full" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Lord of the Rings: The Rings of Power (Series: Action, Adventure, Drama, Fantasy) -->
+        <div class="flex-none w-40 md:w-48 bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-200">
+          <img src="https://bazaarvietnam.vn/wp-content/uploads/2022/09/harper-bazaar-review-the-lord-of-the-rings-the-rings-of-power-2-e1662283735938.png" alt="Rings of Power Poster" class="w-full h-auto object-cover rounded-t-lg" />
+          <div class="p-3">
+            <h3 class="text-sm font-semibold truncate">Rings of Power (Fantasy Epic)</h3>
+            <div class="w-full bg-gray-700 rounded-full h-1 mt-2">
+              <div class="bg-green-500 h-1 rounded-full" style="width: 80%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Summer I Turned Pretty (Series: Coming-of-age, Romantic Drama, Family) -->
+        <div class="flex-none w-40 md:w-48 bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-200">
+          <img src="https://cdn.seat42f.com/wp-content/uploads/2023/07/02200337/The-Summer-I-Turned-Pretty-Season-2-Poster-Key-Art.jpg" alt="Summer I Turned Pretty Poster" class="w-full h-auto object-cover rounded-t-lg" />
+          <div class="p-3">
+            <h3 class="text-sm font-semibold truncate">Summer I Turned Pretty (Romantic Drama)</h3>
+            <div class="w-full bg-gray-700 rounded-full h-1 mt-2">
+              <div class="bg-green-500 h-1 rounded-full" style="width: 55%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Spider-Man: Far From Home (Movie: Action, Adventure, Sci-Fi, Fantasy) -->
+        <div class="flex-none w-40 md:w-48 bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-200">
+          <img src="https://www.sonypictures.co.uk/sites/unitedkingdom/files/2021-09/DP_4710017_TC_1400x2100_DP_4710018_SpiderManFarFromHome_2019_ITUNES_2000x3000_UK_1333x2000_thumbnail.jpg" alt="Spider-Man: Far From Home Poster" class="w-full h-auto object-cover rounded-t-lg" />
+          <div class="p-3">
+            <h3 class="text-sm font-semibold truncate">Spider-Man: Far From Home (Sci-Fi Action)</h3>
+            <div class="w-full bg-gray-700 rounded-full h-1 mt-2">
+              <div class="bg-green-500 h-1 rounded-full" style="width: 75%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interstellar (Movie: Sci-Fi, Adventure, Drama, Family) -->
+        <div class="flex-none w-40 md:w-48 bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-200">
+          <img src="https://i.pinimg.com/originals/8e/0d/ab/8e0dab8699be85720ce55845065bf6dc.jpg" alt="Interstellar Poster" class="w-full h-auto object-cover rounded-t-lg" />
+          <div class="p-3">
+            <h3 class="text-sm font-semibold truncate">Interstellar (Sci-Fi Drama)</h3>
+            <div class="w-full bg-gray-700 rounded-full h-1 mt-2">
+              <div class="bg-green-500 h-1 rounded-full" style="width: 25%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Dark Knight (Movie: Action, Crime, Drama, Superhero, Thriller) -->
+        <div class="flex-none w-40 md:w-48 bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-200">
+          <img src="https://m.media-amazon.com/images/I/91KkWf50SoL._AC_SL1500_.jpg" alt="The Dark Knight Poster" class="w-full h-auto object-cover rounded-t-lg" />
+          <div class="p-3">
+            <h3 class="text-sm font-semibold truncate">The Dark Knight (Crime Thriller)</h3>
+            <div class="w-full bg-gray-700 rounded-full h-1 mt-2">
+              <div class="bg-green-500 h-1 rounded-full" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Renamed "Popular Movies" to "Cricket Matches" -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-4">Cricket Matches</h2>
+      <div class="flex overflow-x-auto space-x-4 pb-4 scroll-row">
+        <!-- Ind vs Aus -->
+        <div class="flex-none w-40 md:w-48 bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-200">
+          <img src="https://staticg.sportskeeda.com/editor/2023/11/2ed42-17003360532850-1920.jpg" alt="India vs Australia Cricket" class="w-full h-auto object-cover rounded-lg" />
+          <div class="p-3">
+            <h3 class="text-sm font-semibold truncate">India vs Australia</h3>
+          </div>
+        </div>
+        <!-- Ind vs Aus (another one) -->
+        <div class="flex-none w-40 md:w-48 bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-200">
+          <img src="https://assets.aboutamazon.com/dims4/default/77c3904/2147483647/strip/true/crop/1599x900+1+0/resize/1240x698!/quality/90/?url=https:%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2Fbb%2F6c%2F8276563a43188a2f846409ce591f%2Fhero-image.jpg" alt="India vs Australia (2)" class="w-full h-auto object-cover rounded-lg" />
+          <div class="p-3">
+            <h3 class="text-sm font-semibold truncate">India vs Australia (2)</h3>
+          </div>
+        </div>
+        <!-- Aus vs SA -->
+        <div class="flex-none w-40 md:w-48 bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-200">
+          <img src="https://images.thequint.com/thequint/2022-03/5e95b3a4-d208-4e24-9d70-e4166d0f7e03/Screenshot_2022_03_03_170926.png" alt="Australia vs South Africa Cricket" class="w-full h-auto object-cover rounded-lg" />
+          <div class="p-3">
+            <h3 class="text-sm font-semibold truncate">Australia vs South Africa</h3>
+          </div>
+        </div>
+        <!-- Aus vs NZ (New Entry) -->
+        <div class="flex-none w-40 md:w-48 bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-200">
+          <img src="https://images.ottplay.com/images/amazon-1639993812.jpg" alt="Australia vs New Zealand Cricket" class="w-full h-auto object-cover rounded-lg" />
+          <div class="p-3">
+            <h3 class="text-sm font-semibold truncate">Australia vs New Zealand</h3>
+          </div>
+        </div>
+        <!-- Ind vs Aus Worldcup 2023 -->
+        <div class="flex-none w-40 md:w-48 bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-200">
+          <img src="https://placehold.co/192x288/065F46/FFF?text=CWC+2023" alt="India vs Australia Worldcup 2023" class="w-full h-auto object-cover rounded-lg" />
+          <div class="p-3">
+            <h3 class="text-sm font-semibold truncate">India vs Aus (WC 2023)</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Movie Genres Placeholder -->
+    <section class="mb-10">
+        <h2 class="text-2xl font-bold mb-4">Browse Movies by Genre</h2>
+        <div class="flex flex-wrap gap-3">
+            <span class="bg-gray-700 text-gray-200 py-2 px-4 rounded-full text-sm hover:bg-gray-600 transition-colors cursor-pointer">Action</span>
+            <span class="bg-gray-700 text-gray-200 py-2 px-4 rounded-full text-sm hover:bg-gray-600 transition-colors cursor-pointer">Comedy</span>
+            <span class="bg-gray-700 text-gray-200 py-2 px-4 rounded-full text-sm hover:bg-gray-600 transition-colors cursor-pointer">Drama</span>
+            <span class="bg-gray-700 text-gray-200 py-2 px-4 rounded-full text-sm hover:bg-gray-600 transition-colors cursor-pointer">Sci-Fi</span>
+            <span class="bg-gray-700 text-gray-200 py-2 px-4 rounded-full text-sm hover:bg-gray-600 transition-colors cursor-pointer">Horror</span>
+            <span class="bg-gray-700 text-gray-200 py-2 px-4 rounded-full text-sm hover:bg-gray-600 transition-colors cursor-pointer">Thriller</span>
+            <span class="bg-gray-700 text-gray-200 py-2 px-4 rounded-full text-sm hover:bg-gray-600 transition-colors cursor-pointer">Romance</span>
+            <span class="bg-gray-700 text-gray-200 py-2 px-4 rounded-full text-sm hover:bg-gray-600 transition-colors cursor-pointer">Family</span>
+        </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 py-6 text-center text-gray-400 text-sm">
+    <p>&copy; 2025 AshZon Prime. All rights reserved.</p>
+    <ul class="flex justify-center space-x-4 mt-2">
+      <li><a href="#" class="hover:text-blue-400 transition-colors">Terms of Service</a></li>
+      <li><a href="#" class="hover:text-blue-400 transition-colors">Privacy Policy</a></li>
+      <li><a href="#" class="hover:text-blue-400 transition-colors">Help</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    // JavaScript for the Epic Content (Hero) Image Carousel
+    document.addEventListener('DOMContentLoaded', () => {
+      const carouselImage = document.getElementById('hero-carousel-image');
+      // Updated images array with the new URLs for the Epic Content carousel
+      const images = [
+        "https://i.ytimg.com/vi/qFhvOB0yoGM/maxresdefault.jpg",
+        "https://m.media-amazon.com/images/S/pv-target-images/c203ae23a15b99597c4a2e7475a5085a65e493aa5167279780b73bcfebab8120._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX500_FMjpg_.jpg",
+        "https://m.media-amazon.com/images/S/pv-target-images/785af8590a7f45e0e39906889941d57a0fd3d911a05b45fee5a8025c2957055d._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX500_FMpng_.png",
+        "https://m.media-amazon.com/images/S/pv-target-images/0fbd6a006c6ba7fd3d6067c6d9a1e6d5da1dd4831c3ebde18dcb9ccaa2988c14._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX500_FMjpg_.jpg",
+        "https://m.media-amazon.com/images/S/pv-target-images/8e0d90bcbc47ad1528ed1d1f0b0e88bf31125fa46acf0201fafa3250b40eac._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX500_FMpng_.png"
+      ];
+      let currentImageIndex = 0;
+
+      function changeHeroImage() {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        carouselImage.src = images[currentImageIndex];
+      }
+
+      // Change image every 5 seconds (5000 milliseconds)
+      setInterval(changeHeroImage, 5000);
+    });
+  </script>
+</body>
+</html>
